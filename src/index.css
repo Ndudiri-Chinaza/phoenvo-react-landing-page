@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+
+
+img {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+:root {
+  /* Typography */
+  --fontSize-xs: 0.5rem;
+  --fontSize-small: 0.875rem;
+  --fontSize-medium: 1rem;
+  --fontSize-selarge: 1.2rem;
+  --fontSize-large: 1.4rem;
+  --fontSize-x-large: 2rem;
+  --fontSize-xl-large: 3rem;
+  --fontWeight-xs: 300;
+  --fontWeight-small: 400;
+  --fontWeight-medium: 500;
+  --fontWeight-semiBold: 600;
+  --fontWeight-Bold: 700;
+  --letterSpacing-small: -1px;
+  --letterSpacing-medium: -0.5px;
+  --letterSpacing-normal: -0.85px;
+  --lineHeight-small: 24px;
+  --lineHeight-medium: 36px;
+  --lineHeight-big: 46px;
+
+  /* Spacing */
+  --space1: 0.25rem;
+  --space2: 0.5rem;
+  --space3: 0.625rem;
+  --space4: 0.75rem;
+  --space5: 0.875rem;
+  --space6: 1rem;
+  --space7: 1.25rem;
+  --space8: 1.313rem;
+  --space9: 1.5rem;
+  --space10: 1.75rem;
+  --space11: 2rem;
+  --space12: 2.25rem;
+  --space13: 2.5rem;
+  --space14: 2.562rem;
+  --space15: 2.75rem;
+  --space16: 3rem;
+  --space17: 3.25rem;
+  --space18: 4rem;
+  --space19: 7rem;
+  --space20: 1.8rem;
+
+  /* Radius */
+  --radius1: 0.3rem;
+  --radius2: 0.5rem;
+  --radius3: 1rem;
+  --radius4: 1.5rem;
+  --radius5: 2rem;
+  --radius6: 2.75rem;
+  --radius7: 3.25rem;
+  --radius8: 6.25rem;
+  --radius9: 0.7rem;
+
+  /* Color */
+  --navColor: #ffffff;
+  --headingTextColor: #0f0f0f;
+  --headingTextColor2: #ffffff;
+  --headingTextColor3: #191919;
+  --bodyTextColor1: #5d6b78;
+  --bodyTextColor2: #4b5560;
+  --bodyTextColor3: #b7bfc7;
+  --bodyTextColor4: #ffffff;
+  --bodyTextColor5: #3e3e3e;
+  --upcomingTextColor: #14171f;
+  --borderColor: #f2f4f7;
+  --menuHoverColor: #ffffff;
+  --actionButtonColor: #0f322e;
+  --getStartedBgColor: #dafa7e;
+  --howItWorksBoderColor: #e2e6e9;
+  --howItWorksBgColor: #ffffff;
+  --featureCardBorderColor: #cfd5da;
+  --testimonialBgColor: #f1faf9;
+  --adamCardBgColor: #ffffff;
+  --elizaCardBgColor: #0f322e;
+  --ctaBgColor: #c5fa52;
+  --footerhoverColor: #2C3A45;
+  --navLinkhoverColor:  #8db400;
+  
+
+
+  /* Clamp Variables */
+  --minimumSizeH1: 1.5rem;
+  --maximumSizeH1: 3rem;
+  --clampVariableH1: clamp(var(--minimumSizeH1), 2vw + 1.5rem, var(--maximumSizeH1));
+
+  --minimumSizeH3: 1rem;
+  --maximumSizeH3: 2rem;
+  --clampVariableH3: clamp(var(--minimumSizeH3), 2vw + 1rem, var(--maximumSizeH3));
+}
+
+[dark-theme="dark"] {
+  --navColor: #ffffff;
+  --headingTextColor: #0f0f0f;
+  --headingTextColor2: #ffffff;
+  --headingTextColor3: #191919;
+  --bodyTextColor1: #5d6b78;
+  --bodyTextColor2: #4b5560;
+  --bodyTextColor3: #b7bfc7;
+  --bodyTextColor4: #ffffff;
+  --bodyTextColor5: #3e3e3e;
+  --upcomingTextColor: #14171f;
+  --borderColor: #f2f4f7;
+  --menuHoverColor: #ffffff;
+  --actionButtonColor: #0f322e;
+  --getStartedBgColor: #dafa7e;
+  --howItWorksBoderColor: #e2e6e9;
+  --howItWorksBgColor: #ffffff;
+  --featureCardBorderColor: #cfd5da;
+  --testimonialBgColor: #f1faf9;
+  --adamCardBgColor: #ffffff;
+  --elizaCardBgColor: #0f322e;
+  --ctaBgColor: #c5fa52;
+  --footerhoverColor: #2C3A45;
+  --navLinkhoverColor:  #8db400;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --navColor: #ffffff;
+  --headingTextColor: #0f0f0f;
+  --headingTextColor2: #ffffff;
+  --headingTextColor3: #191919;
+  --bodyTextColor1: #5d6b78;
+  --bodyTextColor2: #4b5560;
+  --bodyTextColor3: #b7bfc7;
+  --bodyTextColor4: #ffffff;
+  --bodyTextColor5: #3e3e3e;
+  --upcomingTextColor: #14171f;
+  --borderColor: #f2f4f7;
+  --menuHoverColor: #ffffff;
+  --actionButtonColor: #0f322e;
+  --getStartedBgColor: #dafa7e;
+  --howItWorksBoderColor: #e2e6e9;
+  --howItWorksBgColor: #ffffff;
+  --featureCardBorderColor: #cfd5da;
+  --testimonialBgColor: #f1faf9;
+  --adamCardBgColor: #ffffff;
+  --elizaCardBgColor: #0f322e;
+  --ctaBgColor: #c5fa52;
+  --footerhoverColor: #2C3A45;
+  --navLinkhoverColor:  #8db400;
+  }
+  
+}
+
+

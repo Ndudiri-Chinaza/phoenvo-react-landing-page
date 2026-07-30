@@ -1,0 +1,168 @@
+  .getting-started {
+    width: 100%;
+    height: auto;
+    padding: var(--space16) var(--space6);
+  }
+
+  .getting-started-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: var(--space6);
+  }
+
+  .getting-started-header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: var(--space11);
+  }
+
+  .getting-started-title-description-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: var(--space6);
+  }
+
+  .getting-started-title-description-container h1 {
+    font-size: var(--clampVariableH1);
+    font-weight: var(--fontWeight-Bold);
+    color: var(--headingTextColor);
+  }
+
+  .getting-started-title-description-container p {
+    font-size: var(--fontSize-selarge);
+    font-weight: var(--fontWeight-small);
+    color: var(--bodyTextColor2);
+  }
+
+  .getting-started-button-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .getting-started-button-container button {
+    padding: var(--space3) var(--space8);
+    border-radius: var(--radius8);
+    outline: none;
+    color: var(--actionButtonColor);
+    cursor: pointer;
+    font-weight: var( --fontWeight-semiBold);
+    font-size: var( --fontSize-medium);
+    border: none;
+    background-color: var(--getStartedBgColor);
+    transition:
+      background-color 0.25s ease,
+      border-color 0.25s ease,
+      color 0.25s ease,
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+
+  .getting-started-button-container button:hover {
+  background: #CBEF63;
+  border-color: #CBEF63;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(15, 50, 46, 0.15);
+}
+
+.getting-started-button-container button:focus-visible {
+  outline: 3px solid #0F322E;
+  outline-offset: 4px;
+}
+
+.getting-started-image-container {
+  width: 100%;
+  height: auto;
+}
+
+.getting-started-image-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.getting-started-steps {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: var(--space11);
+}
+
+.getting-started-step-card {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: var(--space10) var(--space6);
+  row-gap: var(--space9);
+  border: 1px solid #cfd5da;
+  border-radius: var(--radius3);
+}
+
+.step {
+  width: fit-content;
+  height: auto;
+}
+
+.step p {
+  font-size: var(--fontSize-large);
+  font-weight: var(--fontWeight-small);
+  color: var(--bodyTextColor2);
+}
+
+.step-instruction {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--space6);
+}
+
+.step-instruction h2 {
+  font-size: var(--clampVariableH3);
+  font-weight: var(--fontWeight-Bold);
+  color: var(--headingTextColor);
+}
+
+.step-instruction p {
+  color: var(--bodyTextColor2);
+  line-height: 1.5;
+}
+
+/* Device Responsiveness */
+@media (min-width: 768px) {
+  .getting-started {
+    width: 100%;
+    height: auto;
+    padding: var(--space18) var(--space18);
+  }
+
+  .getting-started-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+  }
+
+  .getting-started-title-description-container h1 {
+    line-height: var(--lineHeight-big);
+  }
+  
+}

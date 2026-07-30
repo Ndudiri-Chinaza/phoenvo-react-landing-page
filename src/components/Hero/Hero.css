@@ -1,0 +1,229 @@
+.heroSection {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--space13) var(--space7);
+}
+
+.hero {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space7);
+}
+
+.titleDescripButton {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space10);
+}
+
+.titleDescription {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space6);
+}
+
+.titleDescription h1 {
+  font-size: var(--clampVariableH1);
+  font-weight: var(--fontWeight-Bold);
+  text-align: center;
+  line-height: var(--lineHeight-medium);
+  color: var(--headingTextColor);
+}
+
+.titleDescription p {
+  font-size: var(--fontSize-medium);
+  font-weight: var(--fontWeight-small);
+  text-align: center;
+  color: var(--bodyTextColor2);
+}
+
+.heroButton {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space10);
+}
+
+.heroButton button {
+  padding: var(--space3) var(--space8);
+  border-radius: var(--radius8);
+  outline: none;
+  color: var(--actionButtonColor);
+  cursor: pointer;
+  font-weight: var(--fontWeight-semiBold);
+  font-size: var(--fontSize-medium);
+}
+
+.getStarted {
+  border: none;
+  background-color: var(--getStartedBgColor);
+  transition:
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.getStarted:hover {
+  background: #cbef63;
+  border-color: #cbef63;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(15, 50, 46, 0.15);
+}
+
+.getStarted:focus-visible {
+  outline: 3px solid #0f322e;
+  outline-offset: 4px;
+}
+
+.howItWorks {
+  border: 1px solid var(--howItWorksBoderColor);
+  background-color: var(--howItWorksBgColor);
+  transition: all 0.25s ease;
+}
+
+.howItWorks:hover {
+  background: #f8faf8;
+  /* border-color: #0f322e; */
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(15, 50, 46, 0.08);
+}
+
+.howItWorks:focus-visible {
+  outline: 3px solid #0f322e;
+  outline-offset: 4px;
+}
+
+.bottom-hero {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroImage {
+  width: 80%;
+  height: auto;
+}
+
+.heroImage img {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Device Responsiveness */
+
+@media (min-width: 630px){
+  .titleDescription p {
+    max-width: 80%;
+  }
+  
+}
+
+@media  (min-width: 768px) {
+  .heroSection {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--space11) var(--space18);
+  }
+
+  .titleDescription h1 {
+    line-height: var(--lineHeight-big);
+  }
+
+  .titleDescription p {
+    max-width: 80%;
+  }
+
+}
+
+@media (min-width: 800px) {
+
+  .titleDescription p {
+    max-width: 80%;
+  }
+
+}
+
+
+@media (min-width: 930px) {
+
+  .titleDescription p {
+    max-width: 70%;
+  }
+
+}
+
+
+@media (min-width: 1024px) {
+  .heroSection {
+    margin-top: 100px;
+  }
+
+  .titleDescription h1 {
+    max-width: 70%;
+  }
+
+  .titleDescription p {
+    max-width: 60%;
+  }
+
+}
+
+
+@media (min-width: 1090px) {
+  .titleDescription p {
+    max-width: 56%;
+  }
+  
+}
+
+@media (min-width: 1160px) {
+  .titleDescription p {
+    max-width: 54%;
+  }
+  
+}
+
+@media (min-width: 1216px) {
+  .titleDescription p {
+    max-width: 50%;
+  }
+  
+}
+
+
+@media (min-width: 1290px) {
+  .titleDescription h1 {
+    line-height: 50px;
+    max-width: 60%;
+  }
+  
+}
+

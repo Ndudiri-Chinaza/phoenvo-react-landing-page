@@ -1,0 +1,69 @@
+.socialProof {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--space13) var(--space7);
+  gap: var(--space16);
+}
+
+.socialProof-text {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialProof-text h1 {
+  font-size: var(--fontSize-large);
+  font-weight: var(--fontWeight-semiBold);
+  color: var(--headingTextColor);
+  text-align: center;
+}
+
+.socialProof-companies {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space14);
+}
+
+.start-up-logos {
+  width: 43%;
+  height: auto;
+}
+
+.start-up-logos img {
+  width: 100%;
+  height: auto;
+}
+
+/* Device Responsiveness */
+@media (min-width: 768px) {
+
+  .socialProof {
+    padding: var(--space13) var(--space18);
+  }
+
+  .socialProof-companies {
+    flex-wrap: nowrap;
+  }
+
+  .start-up-logos {
+    width: 20%;
+    height: auto;
+  }
+
+  .start-up-logos img {
+    width: 100%;
+    height: auto;
+  }
+  
+}

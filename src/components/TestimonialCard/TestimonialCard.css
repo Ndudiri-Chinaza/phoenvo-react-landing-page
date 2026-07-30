@@ -1,0 +1,104 @@
+.testimonial-card {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: var(--space9);
+  row-gap: var(--space11);
+  border: 1px solid #e2e6e9;
+  border-radius: var(--radius9);
+}
+
+.testimonial-card-text {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.testimonial-card-text p {
+  font-size: var(--fontSize-medium);
+  font-weight: var(--fontWeight-small);
+}
+
+.testimonial-user-details {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  column-gap: var(--space4);
+  padding: var(--space8) 0 0 0;
+}
+
+.testimonial-user-image-container {
+  width: 70px;
+  height: 70px;
+  border-radius: 100rem;
+}
+
+.testimonial-user-image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 100rem;
+}
+
+.user-bio-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: var(--radius1);
+}
+
+.user-bio-container p {
+  font-size: var(--fontSize-small);
+}
+
+.adam-card {
+  background-color: var(--adamCardBgColor);
+}
+
+.eliza-card {
+  background-color: var(--elizaCardBgColor);
+}
+
+.adam-text p {
+  color: var(--bodyTextColor2);
+
+}
+
+.eliza-text p {
+  color: var(--bodyTextColor4);
+}
+
+.adam-top {
+  border-top: 1px solid #b7bfc7;
+}
+
+.eliza-top {
+  border-top: 1px solid #e2e6e9;
+}
+
+.adam-bio h3{
+  color: var(--headingTextColor);
+}
+
+.adam-bio p {
+  color: var(--bodyTextColor2);
+}
+
+.eliza-bio h3 {
+  color: var(--headingTextColor2);
+}
+
+.eliza-bio p {
+  color: var(--bodyTextColor3);
+}
